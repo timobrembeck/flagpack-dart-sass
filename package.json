@@ -1,9 +1,9 @@
 {
-  "name": "flagpack",
-  "version": "1.0.5",
-  "description": "A lightweight flag icon toolkit for the web",
+  "name": "flagpack-dart-sass",
+  "version": "1.1.0",
+  "description": "A lightweight flag icon toolkit for the web with support for dart-sass",
   "main": "builder.js",
-  "author": "Jack Marsh",
+  "author": "Timo Ludwig",
   "license": "MIT",
   "homepage": "https://flag.pk/world",
   "scripts": {
@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jackiboy/flagpack.git"
+    "url": "git+https://github.com/timoludwig/flagpack-dart-sass"
   },
   "bugs": {
-    "url": "https://github.com/jackiboy/flagpack/issues"
+    "url": "https://github.com/timoludwig/flagpack-dart-sass/issues"
   },
   "keywords": [
     "flag",
@@ -22,6 +22,7 @@
     "country flags",
     "svg",
     "sass",
+    "dart-sass",
     "scss",
     "web",
     "lightweight",

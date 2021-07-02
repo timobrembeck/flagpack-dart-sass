@@ -6,6 +6,9 @@ _A lightweight flag icon toolkit for the web_
 [visit site](https://flag.pk/world)
 
 
+> :information_source: This is a fork of [jackiboy/flagpack](https://github.com/jackiboy/flagpack) with support for `dart-sass` instead of `node-sass`.
+
+
 ## Install
 flagpack can be installed with npm.
 
