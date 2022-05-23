@@ -29,6 +29,6 @@
     "small"
   ],
   "devDependencies": {
-    "sass": ">=1.33.0"
+    "sass": ">=1.52.1"
   }
 }
