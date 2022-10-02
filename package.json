@@ -1,6 +1,6 @@
 {
   "name": "flagpack-dart-sass",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A lightweight flag icon toolkit for the web with support for dart-sass",
   "main": "builder.js",
   "author": "Timo Ludwig",
