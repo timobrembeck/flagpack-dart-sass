@@ -3,7 +3,7 @@
   "version": "1.5.0",
   "description": "A lightweight flag icon toolkit for the web with support for dart-sass",
   "main": "builder.js",
-  "author": "Timo Ludwig",
+  "author": "Timo Brembeck",
   "license": "MIT",
   "homepage": "https://flag.pk/world",
   "scripts": {
@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timoludwig/flagpack-dart-sass"
+    "url": "git+https://github.com/timobrembeck/flagpack-dart-sass"
   },
   "bugs": {
-    "url": "https://github.com/timoludwig/flagpack-dart-sass/issues"
+    "url": "https://github.com/timobrembeck/flagpack-dart-sass/issues"
   },
   "keywords": [
     "flag",
