@@ -15,6 +15,6 @@ repos:
       - id: mixed-line-ending
       - id: trailing-whitespace
   - repo: https://github.com/rbubley/mirrors-prettier
-    rev: v3.8.4
+    rev: v3.9.4
     hooks:
       - id: prettier
