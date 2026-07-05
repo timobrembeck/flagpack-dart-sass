@@ -1,90 +1,90 @@
 @use "sass:math";
 
-@import "_variables";
-@import "_mixins";
+@use "_variables";
+@use "_mixins";
 
-.#{$fp-prefix} {
+.#{variables.$fp-prefix} {
   @extend %fp-base;
   // 4x3
-  @if $fp-enable-4x3 == true {
-    @include fp-size($fp-size);
+  @if variables.$fp-enable-4x3 == true {
+    @include mixins.fp-size(variables.$fp-size);
   }
   // 1x1
-  @if $fp-enable-1x1 == true {
-    &.#{$fp-prefix}-square {
-      @include fp-size($fp-size, "1x1");
+  @if variables.$fp-enable-1x1 == true {
+    &.#{variables.$fp-prefix}-square {
+      @include mixins.fp-size(variables.$fp-size, "1x1");
     }
   }
   // rounded
-  @if $fp-enable-rounded == true {
-    &.#{$fp-prefix}-rounded {
-      @include fp-rounded(math.div($fp-size, 6));
+  @if variables.$fp-enable-rounded == true {
+    &.#{variables.$fp-prefix}-rounded {
+      @include mixins.fp-rounded(math.div(variables.$fp-size, 6));
     }
   }
   // medium size
-  @if $fp-size-md == true {
-    &.#{$fp-prefix}-md {
+  @if variables.$fp-size-md == true {
+    &.#{variables.$fp-prefix}-md {
       // 4x3 medium
-      @if $fp-enable-4x3 == true {
-        @include fp-size($fp-size * 1.5);
+      @if variables.$fp-enable-4x3 == true {
+        @include mixins.fp-size(variables.$fp-size * 1.5);
       }
       // 1x1 medium
-      @if $fp-enable-1x1 == true {
-        &.#{$fp-prefix}-square {
-          @include fp-size($fp-size * 1.5, "1x1");
+      @if variables.$fp-enable-1x1 == true {
+        &.#{variables.$fp-prefix}-square {
+          @include mixins.fp-size(variables.$fp-size * 1.5, "1x1");
         }
       }
       // rounded medium
-      @if $fp-enable-rounded == true {
-        &.#{$fp-prefix}-rounded {
-          @include fp-rounded(math.div($fp-size, 4));
+      @if variables.$fp-enable-rounded == true {
+        &.#{variables.$fp-prefix}-rounded {
+          @include mixins.fp-rounded(math.div(variables.$fp-size, 4));
         }
       }
     }
   }
   // large size
-  @if $fp-size-lg == true {
-    &.#{$fp-prefix}-lg {
+  @if variables.$fp-size-lg == true {
+    &.#{variables.$fp-prefix}-lg {
       // 4x3 large
-      @if $fp-enable-4x3 == true {
-        @include fp-size($fp-size * 2);
+      @if variables.$fp-enable-4x3 == true {
+        @include mixins.fp-size(variables.$fp-size * 2);
       }
       // 1x1 large
-      @if $fp-enable-1x1 == true {
-        &.#{$fp-prefix}-square {
-          @include fp-size($fp-size * 2, "1x1");
+      @if variables.$fp-enable-1x1 == true {
+        &.#{variables.$fp-prefix}-square {
+          @include mixins.fp-size(variables.$fp-size * 2, "1x1");
         }
       }
       // rounded large
-      @if $fp-enable-rounded == true {
-        &.#{$fp-prefix}-rounded {
-          @include fp-rounded(math.div($fp-size, 4));
+      @if variables.$fp-enable-rounded == true {
+        &.#{variables.$fp-prefix}-rounded {
+          @include mixins.fp-rounded(math.div(variables.$fp-size, 4));
         }
       }
     }
   }
 }
 
-@each $country in $fp-countries {
-  @if $fp-prepend == true {
-    .#{$fp-prefix}-#{$country} {
-      @if $fp-enable-4x3 == true {
-        background-image: url("#{$fp-4x3-path}#{$country}.svg");
+@each $country in variables.$fp-countries {
+  @if variables.$fp-prepend == true {
+    .#{variables.$fp-prefix}-#{$country} {
+      @if variables.$fp-enable-4x3 == true {
+        background-image: url("#{variables.$fp-4x3-path}#{$country}.svg");
       }
-      @if $fp-enable-1x1 == true {
-        &.#{$fp-prefix}-square {
-          background-image: url("#{$fp-1x1-path}#{$country}.svg");
+      @if variables.$fp-enable-1x1 == true {
+        &.#{variables.$fp-prefix}-square {
+          background-image: url("#{variables.$fp-1x1-path}#{$country}.svg");
         }
       }
     }
   } @else {
     .#{$country} {
-      @if $fp-enable-4x3 == true {
-        background-image: url("#{$fp-4x3-path}#{$country}.svg");
+      @if variables.$fp-enable-4x3 == true {
+        background-image: url("#{variables.$fp-4x3-path}#{$country}.svg");
       }
-      @if $fp-enable-1x1 == true {
-        &.#{$fp-prefix}-square {
-          background-image: url("#{$fp-1x1-path}#{$country}.svg");
+      @if variables.$fp-enable-1x1 == true {
+        &.#{variables.$fp-prefix}-square {
+          background-image: url("#{variables.$fp-1x1-path}#{$country}.svg");
         }
       }
     }
