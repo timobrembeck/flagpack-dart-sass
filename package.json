@@ -5,7 +5,7 @@
   "main": "builder.js",
   "author": "Timo Brembeck",
   "license": "MIT",
-  "homepage": "https://flag.pk/world",
+  "homepage": "https://github.com/timobrembeck/flagpack-dart-sass",
   "scripts": {
     "compile:sass": "node builder.js",
     "check:dist": "npm run compile:sass && git diff --exit-code -- dist/"

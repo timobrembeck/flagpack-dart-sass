@@ -2,10 +2,6 @@
 
 _A lightweight flag icon toolkit for the web_
 
-![Flagpack Screenshot](https://flag.pk/og.jpg)
-
-[visit site](https://flag.pk/world)
-
 > :information_source: This is a fork of [jackiboy/flagpack](https://github.com/jackiboy/flagpack) with support for `dart-sass` instead of `node-sass`.
 
 ## Install
@@ -43,10 +39,6 @@ you can import the built css file directly into your project. this will include 
 **square variant:**
 
 `<span class="fp fp-square bo"></span>`
-
-_[visit flag.pk](https://flag.pk/world) to quickly copy your countries code for your project._
-
----
 
 ### SASS
 
