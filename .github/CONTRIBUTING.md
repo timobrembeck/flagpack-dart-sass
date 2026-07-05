@@ -7,19 +7,22 @@ that keep pull requests easy to review and merge.
 
 ```
 npm ci
+pre-commit install
 ```
 
-That installs `sass` (dart-sass), which is all you need.
+`npm ci` installs `sass` (dart-sass). [pre-commit](https://pre-commit.com/)
+runs the linting hooks (prettier and friends) on every commit; CI runs the
+same hooks on every push, so installing them locally saves you a round trip.
 
 ## Project layout
 
-| Path                | Role                                                        |
-|---------------------|-------------------------------------------------------------|
-| `src/`              | SCSS sources — the single source of truth for the CSS       |
-| `flags/4x3/`        | Flag SVGs in 4x3 format (21×15 viewport)                    |
-| `flags/1x1/`        | Flag SVGs in square format (15×15 viewport)                 |
-| `dist/flagpack.css` | **Generated** — never edit by hand (see below)              |
-| `builder.js`        | Build script that compiles `src/` into `dist/`              |
+| Path                | Role                                                  |
+| ------------------- | ----------------------------------------------------- |
+| `src/`              | SCSS sources — the single source of truth for the CSS |
+| `flags/4x3/`        | Flag SVGs in 4x3 format (21×15 viewport)              |
+| `flags/1x1/`        | Flag SVGs in square format (15×15 viewport)           |
+| `dist/flagpack.css` | **Generated** — never edit by hand (see below)        |
+| `builder.js`        | Build script that compiles `src/` into `dist/`        |
 
 ## `dist/` is generated — never edit it by hand
 
@@ -51,6 +54,7 @@ endings). A PR's `dist/flagpack.css` must be byte-identical to what
    Keep the files minimal (single line, no editor metadata) and look at
    neighbouring flags for style reference. Verify both render correctly at
    small sizes.
+
 3. **Register the code** in the `$fp-countries` list — in **both** places,
    at the alphabetical position:
    - `src/_variables.scss`

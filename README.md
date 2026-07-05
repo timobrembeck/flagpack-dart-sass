@@ -1,23 +1,25 @@
 # Flagpack for Dart Sass
+
 _A lightweight flag icon toolkit for the web_
 
 ![Flagpack Screenshot](https://flag.pk/og.jpg)
 
 [visit site](https://flag.pk/world)
 
-
 > :information_source: This is a fork of [jackiboy/flagpack](https://github.com/jackiboy/flagpack) with support for `dart-sass` instead of `node-sass`.
 
-
 ## Install
+
 flagpack can be installed with npm.
 
 ```
 npm i flagpack-dart-sass
 ```
+
 ## Use in your project
 
 ### CSS
+
 you can import the built css file directly into your project. this will include all the css classes & flag icons.
 
 ### examples
@@ -42,12 +44,12 @@ you can import the built css file directly into your project. this will include 
 
 `<span class="fp fp-square bo"></span>`
 
-
 _[visit flag.pk](https://flag.pk/world) to quickly copy your countries code for your project._
 
 ---
 
 ### SASS
+
 Flagpack is built with SASS (SCSS). There are a few variables that are `!default` so that you can override them easily.
 
 Since the stylesheets use the Sass module system (`@use`), overrides have to be passed to the variables module via `with (...)` — defining the variables before an `@import` no longer has any effect:
@@ -55,7 +57,11 @@ Since the stylesheets use the Sass module system (`@use`), overrides have to be 
 ```scss
 @use "flagpack-dart-sass/src/variables" with (
   $fp-prefix: "flag",
-  $fp-countries: ("bo", "de", "us")
+  $fp-countries: (
+    "bo",
+    "de",
+    "us",
+  )
 );
 @use "flagpack-dart-sass/src/flagpack";
 ```
@@ -94,7 +100,6 @@ $fp-size-md: true !default;
 $fp-size-lg: true !default;
 ```
 
-
 **Countries:**
 If you would like to include only a few countries you can override this variable. Just include the country codes you want.
 
@@ -129,9 +134,11 @@ You can optionally turn off flag formats if you would only like to use one forma
 ```
 $fp-enable-4x3: true !default;
 ```
+
 ```
 $fp-enable-1x1: true !default;
 ```
+
 ```
 $fp-enable-rounded: true !default;
 ```
@@ -139,24 +146,28 @@ $fp-enable-rounded: true !default;
 **Flag SVG paths:**
 You will always need to override these variables if you are going to use the sass files directly in your project.
 
-* `$fp-4x3-path` is for the **4x3** (rectangle) formats.
-* `$fp-1x1-path` is for the **1x1** (square) formats.
+- `$fp-4x3-path` is for the **4x3** (rectangle) formats.
+- `$fp-1x1-path` is for the **1x1** (square) formats.
 
 ```
 $fp-4x3-path: '../flags/4x3/' !default;
 ```
+
 ```
 $fp-1x1-path: '../flags/1x1/' !default;
 ```
 
 ## Why use this library?
+
 Most flag libraries out there either use low quality png's or overly complex svg's that don't scale down well. Flagpack is around `125kb gzipped` this is including all the svgs (both **1x1** and **4x3** formats) plus the css. making it about **10x** smaller than [flag-icon-css](https://github.com/lipis/flag-icon-css).
 
 Using only **1x1** or **4x3** formats will reduce the size to around `60kb`.
 
 ## Contributing
+
 Contributions are welcome — especially new or updated flags. Please read the [contributing guide](.github/CONTRIBUTING.md) first; it explains the flag checklist and why `dist/flagpack.css` must be regenerated with `npm run compile:sass` instead of edited by hand.
 
 ## Credits
+
 `flagpack-dart-sass` is a fork of [flagpack](https://github.com/jackiboy/flagpack) with support for `dart-sass` instead of `node-sass`.
 `flagpack` uses the [flagkit](https://github.com/madebybowtie/FlagKit) as the base for it's icons plus a few custom additions. If you are looking for flags for IOS & Android please use this library.
