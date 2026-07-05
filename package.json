@@ -7,7 +7,8 @@
   "license": "MIT",
   "homepage": "https://flag.pk/world",
   "scripts": {
-    "compile:sass": "node builder.js"
+    "compile:sass": "node builder.js",
+    "check:dist": "npm run compile:sass && git diff --exit-code -- dist/"
   },
   "repository": {
     "type": "git",

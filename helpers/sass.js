@@ -19,11 +19,13 @@ exports.compile = function (input, output) {
               console.log("File written to: ", pathToFlagStyles);
             } else {
               console.error(err);
+              process.exitCode = 1;
             }
           },
         );
       } else {
         console.error(err);
+        process.exitCode = 1;
       }
     },
   );

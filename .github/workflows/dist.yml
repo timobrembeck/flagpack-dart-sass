@@ -1,0 +1,12 @@
+name: Dist
+on: [push, pull_request]
+jobs:
+  check-dist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "25"
+      - run: npm ci
+      - run: npm run check:dist

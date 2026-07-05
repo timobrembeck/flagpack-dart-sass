@@ -40,6 +40,12 @@ broken search-and-replace, a stripped UTF-8 byte-order mark, changed line
 endings). A PR's `dist/flagpack.css` must be byte-identical to what
 `npm run compile:sass` produces from the PR's `src/`.
 
+CI enforces this on every push; you can run the same check locally with:
+
+```
+npm run check:dist
+```
+
 ## Adding or updating a flag
 
 1. **Pick the code.** Countries use their ISO 3166-1 alpha-2 code (`nl`,
