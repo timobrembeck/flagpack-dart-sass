@@ -162,4 +162,4 @@ Contributions are welcome — especially new or updated flags. Please read the [
 ## Credits
 
 `flagpack-dart-sass` is a fork of [flagpack](https://github.com/jackiboy/flagpack) with support for `dart-sass` instead of `node-sass`.
-`flagpack` uses the [flagkit](https://github.com/madebybowtie/FlagKit) as the base for it's icons plus a few custom additions. If you are looking for flags for IOS & Android please use this library.
+`flagpack` uses the [flagkit](https://github.com/madebybowtie/FlagKit) as the base for its icons plus a few custom additions. If you are looking for flags for iOS & Android please use this library.
