@@ -19,6 +19,16 @@ and this project uses [SemVer](https://semver.org/) (`MAJOR.MINOR.PATCH`).
 
 - [#17] Add Romani flag (`rom`) by @RobinvanderVliet
 - [#18] Add Sámi flag (`smi`) by @RobinvanderVliet
+- Add MIT license file
+
+### Fixed
+
+- Publish only runtime assets (`dist/`, `flags/`, `src/`) to npm instead of
+  the whole repository
+- Remove the package `main` entry point, which executed the Sass compiler on
+  `require()`; the package now exposes `style` (built CSS) and `sass` (SCSS
+  entry point) fields instead
+- Remove links to the defunct flag.pk website
 
 Compare changes: [v1.5.1 → Unreleased](https://github.com/timobrembeck/flagpack-dart-sass/compare/v1.5.1...HEAD)
 

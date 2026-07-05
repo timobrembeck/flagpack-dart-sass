@@ -2,7 +2,14 @@
   "name": "flagpack-dart-sass",
   "version": "1.5.1",
   "description": "A lightweight flag icon toolkit for the web with support for dart-sass",
-  "main": "builder.js",
+  "style": "dist/flagpack.css",
+  "sass": "src/flagpack.scss",
+  "files": [
+    "dist",
+    "flags",
+    "src",
+    "CHANGELOG.md"
+  ],
   "author": "Timo Brembeck",
   "license": "MIT",
   "homepage": "https://github.com/timobrembeck/flagpack-dart-sass",
@@ -30,6 +37,6 @@
     "small"
   ],
   "devDependencies": {
-    "sass": ">=1.78.0"
+    "sass": "^1.78.0"
   }
 }
