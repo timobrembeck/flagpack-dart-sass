@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project uses [SemVer](https://semver.org/) (`MAJOR.MINOR.PATCH`).
 
-## [Unreleased]
+## [v2.0.0] - 2026-07-05
 
 ### Changed
 
@@ -34,7 +34,7 @@ and this project uses [SemVer](https://semver.org/) (`MAJOR.MINOR.PATCH`).
   entry point) fields instead
 - Remove links to the defunct flag.pk website
 
-Compare changes: [v1.5.1 → Unreleased](https://github.com/timobrembeck/flagpack-dart-sass/compare/v1.5.1...HEAD)
+Compare changes: [v1.5.1 → v2.0.0](https://github.com/timobrembeck/flagpack-dart-sass/compare/v1.5.1...v2.0.0)
 
 ## [v1.5.1] - 2024-09-14
 
