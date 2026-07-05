@@ -9,20 +9,20 @@ and this project uses [SemVer](https://semver.org/) (`MAJOR.MINOR.PATCH`).
 
 ### Changed
 
-- **Breaking:** [#15] Migrate to the Sass module system (`@use`) by @RobinvanderVliet.
+- **Breaking:** [ [#15](https://github.com/timobrembeck/flagpack-dart-sass/pull/15) ] Migrate to the Sass module system (`@use`) by @RobinvanderVliet.
   Variable overrides must now be passed via `@use ".../variables" with (...)`;
   defining them before an `@import` no longer has any effect (see the SASS
   section in the README).
-- **Breaking:** [#3] Rename the size helper classes `fp-md` → `fp-medium` and
+- **Breaking:** [ [#3](https://github.com/timobrembeck/flagpack-dart-sass/issues/3) ] Rename the size helper classes `fp-md` → `fp-medium` and
   `fp-lg` → `fp-large`, because `fp-md` collided with the Moldova flag when
   `$fp-prepend` is enabled. `fp-lg` is kept as a deprecated alias; `fp-md` is
   gone entirely.
-- [#16] Update the Syrian flag to the new design adopted in December 2024 by @RobinvanderVliet
+- [ [#16](https://github.com/timobrembeck/flagpack-dart-sass/pull/16) ] Update the Syrian flag to the new design adopted in December 2024 by @RobinvanderVliet
 
 ### Added
 
-- [#17] Add Romani flag (`rom`) by @RobinvanderVliet
-- [#18] Add Sámi flag (`smi`) by @RobinvanderVliet
+- [ [#17](https://github.com/timobrembeck/flagpack-dart-sass/pull/17) ] Add Romani flag (`rom`) by @RobinvanderVliet
+- [ [#18](https://github.com/timobrembeck/flagpack-dart-sass/pull/18) ] Add Sámi flag (`smi`) by @RobinvanderVliet
 - Add MIT license file
 
 ### Fixed
@@ -48,12 +48,12 @@ Compare changes: [v1.5.0 → v1.5.1](https://github.com/timobrembeck/flagpack-da
 
 ### Added
 
-- [#9] Add new flag for German (Easy) by @MizukiTemma
-- [#11] Add Esperanto flag by @RobinvanderVliet
+- [ [#9](https://github.com/timobrembeck/flagpack-dart-sass/issues/9) ] Add new flag for German (Easy) by @MizukiTemma
+- [ [#11](https://github.com/timobrembeck/flagpack-dart-sass/pull/11) ] Add Esperanto flag by @RobinvanderVliet
 
 ### Fixed
 
-- [#12] Update Mauritanian flag by @RobinvanderVliet
+- [ [#12](https://github.com/timobrembeck/flagpack-dart-sass/pull/12) ] Update Mauritanian flag by @RobinvanderVliet
 
 Compare changes: [v1.4.0 → v1.5.0](https://github.com/timobrembeck/flagpack-dart-sass/compare/v1.4.0...v1.5.0)
 
@@ -61,8 +61,8 @@ Compare changes: [v1.4.0 → v1.5.0](https://github.com/timobrembeck/flagpack-da
 
 ### Fixed
 
-- [#2] Rename `fa` flag to `fs` to fix name collisions with FontAwesome
-- [#4] Fix alignment of the Solomon Islands flag
+- [ [#2](https://github.com/timobrembeck/flagpack-dart-sass/issues/2) ] Rename `fa` flag to `fs` to fix name collisions with FontAwesome
+- [ [#4](https://github.com/timobrembeck/flagpack-dart-sass/issues/4) ] Fix alignment of the Solomon Islands flag
 
 Compare changes: [v1.3.0 → v1.4.0](https://github.com/timobrembeck/flagpack-dart-sass/compare/v1.3.0...v1.4.0)
 
