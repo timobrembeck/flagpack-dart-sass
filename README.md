@@ -50,6 +50,18 @@ _[visit flag.pk](https://flag.pk/world) to quickly copy your countries code for 
 ### SASS
 Flagpack is built with SASS (SCSS). There are a few variables that are `!default` so that you can override them easily.
 
+Since the stylesheets use the Sass module system (`@use`), overrides have to be passed to the variables module via `with (...)` — defining the variables before an `@import` no longer has any effect:
+
+```scss
+@use "flagpack-dart-sass/src/variables" with (
+  $fp-prefix: "flag",
+  $fp-countries: ("bo", "de", "us")
+);
+@use "flagpack-dart-sass/src/flagpack";
+```
+
+The available variables and their defaults:
+
 **Set custom prefix:**
 Set the class prefix (the default is `fp`).
 
