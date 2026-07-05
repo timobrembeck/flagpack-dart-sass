@@ -154,6 +154,9 @@ Most flag libraries out there either use low quality png's or overly complex svg
 
 Using only **1x1** or **4x3** formats will reduce the size to around `60kb`.
 
+## Contributing
+Contributions are welcome — especially new or updated flags. Please read the [contributing guide](.github/CONTRIBUTING.md) first; it explains the flag checklist and why `dist/flagpack.css` must be regenerated with `npm run compile:sass` instead of edited by hand.
+
 ## Credits
 `flagpack-dart-sass` is a fork of [flagpack](https://github.com/jackiboy/flagpack) with support for `dart-sass` instead of `node-sass`.
 `flagpack` uses the [flagkit](https://github.com/madebybowtie/FlagKit) as the base for it's icons plus a few custom additions. If you are looking for flags for IOS & Android please use this library.
