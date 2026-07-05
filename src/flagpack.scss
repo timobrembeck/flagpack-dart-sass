@@ -22,8 +22,9 @@
     }
   }
   // medium size
+  // No `-md` alias: it collides with the country code of Moldova.
   @if variables.$fp-size-md == true {
-    &.#{variables.$fp-prefix}-md {
+    &.#{variables.$fp-prefix}-medium {
       // 4x3 medium
       @if variables.$fp-enable-4x3 == true {
         @include mixins.fp-size(variables.$fp-size * 1.5);
@@ -43,7 +44,9 @@
     }
   }
   // large size
+  // `-lg` is a deprecated alias, kept while no flag uses the `lg` slug.
   @if variables.$fp-size-lg == true {
+    &.#{variables.$fp-prefix}-large,
     &.#{variables.$fp-prefix}-lg {
       // 4x3 large
       @if variables.$fp-enable-4x3 == true {

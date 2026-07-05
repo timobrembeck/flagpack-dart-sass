@@ -26,11 +26,11 @@ you can import the built css file directly into your project. this will include 
 
 **medium:**
 
-`<span class="fp fp-md bo"></span>`
+`<span class="fp fp-medium bo"></span>`
 
 **large:**
 
-`<span class="fp fp-lg bo"></span>`
+`<span class="fp fp-large bo"></span>`
 
 **rounded:**
 
@@ -75,14 +75,14 @@ $fp-prepend: false !default;
 ```
 
 **Set default icon size:**
-This will also modify the `fp-md`, `fp-lg` & `fp-rounded` sizes.
+This will also modify the `fp-medium`, `fp-large` & `fp-rounded` sizes.
 
 ```
 $fp-size: 1em !default;
 ```
 
 **Size Helpers:**
-By default Flagpack has a medium `.md` and large `.lg` helper class. You can disable generating these size classes if you don't need them.
+By default Flagpack has a medium `.fp-medium` and large `.fp-large` helper class (`.fp-lg` still works as a deprecated alias). You can disable generating these size classes if you don't need them.
 
 ```
 $fp-size-md: true !default;

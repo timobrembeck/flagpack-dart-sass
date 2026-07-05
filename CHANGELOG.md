@@ -13,6 +13,10 @@ and this project uses [SemVer](https://semver.org/) (`MAJOR.MINOR.PATCH`).
   Variable overrides must now be passed via `@use ".../variables" with (...)`;
   defining them before an `@import` no longer has any effect (see the SASS
   section in the README).
+- **Breaking:** [#3] Rename the size helper classes `fp-md` → `fp-medium` and
+  `fp-lg` → `fp-large`, because `fp-md` collided with the Moldova flag when
+  `$fp-prepend` is enabled. `fp-lg` is kept as a deprecated alias; `fp-md` is
+  gone entirely.
 - [#16] Update the Syrian flag to the new design adopted in December 2024 by @RobinvanderVliet
 
 ### Added

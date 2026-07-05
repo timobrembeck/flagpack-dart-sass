@@ -53,6 +53,9 @@ npm run check:dist
    e.g. an ISO 639 language code (`rom` for Romani, `smi` for Sámi) or a
    widely understood identifier (`eu`, `lgbt`). The code becomes a bare CSS
    class when `$fp-prepend` is off, so keep it short and collision-free.
+   The code must also never equal a modifier class suffix (`medium`, `large`,
+   `lg`, `square`, `rounded`) — that would clash with the prefixed helper
+   classes, as once happened with `fp-md` vs. Moldova (issue #3).
 2. **Add both SVG formats:**
    - `flags/4x3/<code>.svg` with `width="21" height="15"`
    - `flags/1x1/<code>.svg` with `width="15" height="15"`
