@@ -10,6 +10,12 @@ npm ci
 pre-commit install
 ```
 
+Use the Node version in [`.nvmrc`](../.nvmrc) (24 LTS) — `nvm use` or
+`fnm use` picks it up, and both CI workflows read the same file. Node 25 does
+not work: it is EOL and shipped npm 11.12.1 to the end, which cannot install
+the prettier hook environment (`npm error code EALLOWGIT`, fixed in npm
+11.13.0), so `pre-commit` aborts with exit code 3.
+
 `npm ci` installs `sass` (dart-sass). [pre-commit](https://pre-commit.com/)
 runs the linting hooks (prettier and friends) on every commit; CI runs the
 same hooks on every push, so installing them locally saves you a round trip.
